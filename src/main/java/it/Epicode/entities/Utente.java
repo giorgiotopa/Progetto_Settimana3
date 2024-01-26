@@ -16,7 +16,6 @@ public class Utente {
     @Column(name = "numero_tessera")
     private String numeroTessera;
     @OneToMany(mappedBy = "utente")
-//    @OrderBy("evento asc")
     private List<Prestito> prestiti;
 
     public Utente() {
